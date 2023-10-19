@@ -6,5 +6,7 @@ namespace WebApplication2.NewFolder
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) { }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Student> Student { get; set; }
+
     }
 }
