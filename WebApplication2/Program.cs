@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.NewFolder;
 
@@ -5,6 +6,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
+{
+    option.ExpireTimeSpan = TimeSpan.FromSeconds(60);
+    option.LoginPath = "/Account/Login";
+    option.AccessDeniedPath = "/Account/Login";
+});
+builder.Services.AddSession(option =>
+{
+    option.IdleTimeout = TimeSpan.FromMinutes(1);
+    option.Cookie.HttpOnly = true;
+    option.Cookie.IsEssential = true;
+
+});
 
 //db
  builder.Services.AddDbContext<ApplicationContext>(options =>
@@ -25,6 +39,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseSession();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

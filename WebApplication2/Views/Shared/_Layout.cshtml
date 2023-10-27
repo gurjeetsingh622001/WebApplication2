@@ -33,6 +33,12 @@
                         </li>
                     </ul>
                 </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="nav-bar">
+                        <span style="margin-right:10px;">Welecome</span><span class="" style="margin-right: 10px;color: aqua;font-weight: 900;">@User.Identity.Name</span><a class="btn btn-secondary" asp-controller="Account" asp-action="Logout">Logout</a>
+                    </div>
+                }
             </div>
         </nav>
     </header>

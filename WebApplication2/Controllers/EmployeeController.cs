@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebApplication2.Models;
 using WebApplication2.NewFolder;
 
 namespace WebApplication2.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly ApplicationContext context;
@@ -38,12 +40,9 @@ namespace WebApplication2.Controllers
                 };
                 context.Employees.Add(emp);
                 context.SaveChanges();
+                TempData["message"] = "Employee Added";
                 return RedirectToAction("Index");
-
-
             }
-            TempData["message"] = "Employee Added";
-
             return View(model);
         }
 
@@ -73,13 +72,13 @@ namespace WebApplication2.Controllers
         {
             try
             {
-            var emp = context.Employees.SingleOrDefault(emp => emp.Id == id);
-            context.Employees.Remove(emp);
-            context.SaveChanges();
-            TempData["message"] = "Employee Deleted";
-            return RedirectToAction("Index");
+                var emp = context.Employees.SingleOrDefault(emp => emp.Id == id);
+                context.Employees.Remove(emp);
+                context.SaveChanges();
+                TempData["message"] = "Employee Deleted";
+                return RedirectToAction("Index");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
