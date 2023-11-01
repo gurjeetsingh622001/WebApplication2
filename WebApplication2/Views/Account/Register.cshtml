@@ -1,10 +1,11 @@
 ﻿@model WebApplication2.Models.User
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Register Page";
     Layout = "~/Views/Shared/loginLayout.cshtml";
 }
 <div class="container">
     <h2 class="text-center mt-4">User Registration</h2>
+    <h2 class="text-center mt-4">@ViewData["Title"]</h2>
     <h2 class="text-center text-danger mt-4">@TempData["alreadyExit"]</h2>
     <div class="row">
         <div class="col-md-3"></div>

@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets\\WebApplication2.bundle.scp.css"
     },
     {
+      "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Image\\image.png",
+      "PackagePath": "staticwebassets\\Content\\Image\\image.png"
+    },
+    {
+      "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Image\\image2.jpg",
+      "PackagePath": "staticwebassets\\Content\\Image\\image2.jpg"
+    },
+    {
+      "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Image\\images.png",
+      "PackagePath": "staticwebassets\\Content\\Image\\images.png"
+    },
+    {
+      "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Image\\images1.png",
+      "PackagePath": "staticwebassets\\Content\\Image\\images1.png"
+    },
+    {
+      "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Imageimage.png",
+      "PackagePath": "staticwebassets\\Content\\Imageimage.png"
+    },
+    {
+      "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Imageimage1.jpg",
+      "PackagePath": "staticwebassets\\Content\\Imageimage1.jpg"
+    },
+    {
+      "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Imageimage2.jpg",
+      "PackagePath": "staticwebassets\\Content\\Imageimage2.jpg"
+    },
+    {
       "Id": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
