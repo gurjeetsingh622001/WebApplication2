@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication2.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ImageUploadController : Controller
     {
         private readonly ApplicationContext context;

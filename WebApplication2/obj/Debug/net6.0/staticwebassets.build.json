@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9FFt9puIQnmvKys0x9Tqf17QOJ8lOGout87Fz2bGC7s=",
+  "Hash": "nvorJ1SgItO2jH8GwvyV4arn3ZH1EeNxWE/Z6mXJrK4=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\Content\\Image\\images.png"
     },
     {
-      "Identity": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Image\\images1ll.png",
+      "Identity": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Image\\images1.png",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
-      "RelativePath": "Content/Image/images1ll.png",
+      "RelativePath": "Content/Image/images1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Content\\Image\\images1ll.png"
+      "OriginalItemSpec": "wwwroot\\Content\\Image\\images1.png"
     },
     {
       "Identity": "C:\\github\\WebApplication2\\WebApplication2\\wwwroot\\Content\\Imageimage.png",
